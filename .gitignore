@@ -1,0 +1,11 @@
+# Ignore download logs
+download_log.txt
+*.log
+
+# Ignore environment files (protects your keys)
+.env
+.env.local
+
+# Ignore system files
+.DS_Store
+Thumbs.db
