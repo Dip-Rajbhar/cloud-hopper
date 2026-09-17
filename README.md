@@ -47,7 +47,8 @@ Copy and paste this **one command** into your terminal and press Enter:
 
 ```bash
 curl -L https://github.com/peak/s5cmd/releases/download/v2.2.0/s5cmd_2.2.0_Linux-64bit.tar.gz | tar xvz -C /tmp && sudo mv /tmp/s5cmd /usr/local/bin/s5cmd
-Step 3: Set Your S3 Credentials
+```
+###Step 3: Set Your S3 Credentials
 
 You need an S3-compatible storage provider. Many offer free tiers, but check their pricing and limits before uploading huge files.
 
@@ -55,14 +56,20 @@ Once you have your keys, set them in the terminal (replace with your actual keys
 
 ```bash
 export AWS_ACCESS_KEY_ID=your_access_key
+```
+```bash
 export AWS_SECRET_ACCESS_KEY=your_secret_key
 ```
-
-Step 4: Download the Script
+###Step 4: Download the Script
 
 Save the dl.sh script to your machine. You can copy it from this repository, or paste it directly into your terminal using cat << 'EOF' > dl.sh ... EOF.
 
-Step 5: Run the Script
+Once saved, make it executable by running:
+
+```bash
+chmod +x dl.sh
+```
+###Step 5: Run the Script
 
 ```bash
 bash dl.sh
