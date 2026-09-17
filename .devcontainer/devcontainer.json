@@ -1,0 +1,5 @@
+{
+  "name": "Direct Cloud Uploader",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "curl -L https://github.com/peak/s5cmd/releases/download/v2.2.0/s5cmd_2.2.0_Linux-64bit.tar.gz | tar xvz -C /tmp && sudo mv /tmp/s5cmd /usr/local/bin/s5cmd"
+}
